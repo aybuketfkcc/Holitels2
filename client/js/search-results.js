@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .map(([key, val]) => `${encodeURIComponent(key)}=${encodeURIComponent(val)}`)
     .join('&');
 
-  fetch(`http://localhost:3000/api/search?${query}`)
+  fetch('https://holitels2-api.onrender.com/api/search?${query}')
     .then(res => res.json())
     .then(hotels => {
       const list = document.getElementById('hotel-list');
