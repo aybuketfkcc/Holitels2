@@ -48,7 +48,7 @@ async function loadHotelImages(hotelId) {
   let currentIndex = 0;
 
   try {
-    const res = await fetch(`http://localhost:3000/api/hotel-images/${hotelId}`);
+    const res = await fetch(`https://holitels2-api.onrender.com/api/hotel-images/${hotelId}`);
     if (!res.ok) throw new Error('Görseller yüklenemedi');
     imageList = await res.json();
 

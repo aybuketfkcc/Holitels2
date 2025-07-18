@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Otel verilerini API'den çekme ve listeleme
-  fetch('http://localhost:3000/api/hotels')
+  fetch('https://holitels2-api.onrender.com/api/hotels')
     .then(response => response.json())
     .then(hotels => {
       const container = document.getElementById('hotel-list');

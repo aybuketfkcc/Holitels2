@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const user_id = user ? user.id : null;
 
       try {
-        const res = await fetch('http://localhost:3000/api/reservations', {
+        const res = await fetch('https://holitels2-api.onrender.com/api/reservations', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ hotel_id: hotelId, guest_name, check_in, check_out, person_count, user_id })

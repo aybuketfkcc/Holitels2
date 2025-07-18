@@ -71,7 +71,7 @@ if (searchForm) {
 
 });
 
-fetch('http://localhost:3000/api/hotels')
+fetch('https://holitels2-api.onrender.com/api/hotels')
   .then(res => res.json())
   .then(data => {
     const list = document.getElementById('hotel-list');

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const password = document.getElementById('password').value;
 
       try {
-        const res = await fetch('http://localhost:3000/api/login', {
+        const res = await fetch('https://holitels2-api.onrender.com/api/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
