@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // 👉 Otel detay bilgilerini çek ve göster
 async function loadHotelDetails(hotelId) {
   try {
-    const res = await fetch(`http://localhost:3000/api/hotels/${hotelId}`);
+    const res = await fetch(`https://holitels2-api.onrender.com/api/hotels/${hotelId}`);
     if (!res.ok) throw new Error('Otel detayı alınamadı');
 
     const hotel = await res.json();

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Rezervasyonları listele
   if (user && user.id) {
-    fetch(`http://localhost:3000/api/reservations?userId=${user.id}`)
+    fetch(`https://holitels2-api.onrender.com/api/reservations?userId=${user.id}`)
       .then(res => res.json())
       .then(data => {
         const list = document.getElementById('reservation-list');
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = e.target.dataset.id;
             if (confirm('Bu rezervasyonu silmek istediğinizden emin misiniz?')) {
               try {
-                const res = await fetch(`http://localhost:3000/api/reservations/${id}`, {
+                const res = await fetch(`https://holitels2-api.onrender.com/api/reservations/${id}`, {
                   method: 'DELETE'
                 });
 
